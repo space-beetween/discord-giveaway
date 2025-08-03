@@ -1,0 +1,5 @@
+disnake==2.10.1
+PyYAML==6.0.2
+asyncpg==0.30.0
+SQLAlchemy==2.0.41
+loguru==0.7.3
