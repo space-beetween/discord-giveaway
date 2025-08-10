@@ -16,7 +16,8 @@ intents = disnake.Intents(
     guilds=True,
     members=True,
 )
-bot = commands.InteractionBot(test_guilds=_conf.test_guilds, intents=intents)
+test_guilds = _conf.test_guilds if _conf._test_guilds else None
+bot = commands.InteractionBot(test_guilds=test_guilds, intents=intents)
 bot.load_extensions("src/cogs")
 
 
